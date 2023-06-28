@@ -15,7 +15,7 @@ spec:
   params:
   - name: annotations
     value:
-      autoscaling.knative.dev/minScale: "10"
+      autoscaling.knative.dev/minScale: "1"
   source:
     git:
       url: https://github.com/bullblock/tanzu-java-web-app.git

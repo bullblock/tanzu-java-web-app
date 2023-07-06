@@ -8,14 +8,14 @@ metadata:
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
     app.kubernetes.io/part-of: tanzu-java-web-app
 spec:
-#  build:
-#    env:
-#      - name: BP_JVM_VERSION
-#        value: "11"
-#  params:
-#  - name: annotations
-#    value:
-#      autoscaling.knative.dev/minScale: "1"
+  build:
+    env:
+      - name: BP_JVM_VERSION
+        value: "11"
+  params:
+  - name: annotations
+    value:
+      autoscaling.knative.dev/minScale: "3"
   source:
     git:
       url: https://github.com/bullblock/tanzu-java-web-app.git
